@@ -1,6 +1,5 @@
 import random
 
-
 def jogar():
     imprime_mensagem_abertura()
     palavra_secreta = carrega_palavra_secreta()
@@ -45,7 +44,7 @@ def desenha_forca(erros):
 
     if(erros == 2):
         print (" |      (_)   ")
-        print (" |      \     ")
+        print (" |       |    ")
         print (" |            ")
         print (" |            ")
 
@@ -103,21 +102,21 @@ def imprime_mensagem_perdedor(palavra_secreta):
     print("Puxa, você foi enforcado!")
     print("A palavra era {}".format(palavra_secreta))
     print("    _______________         ")
-    print("   /               \       ")
-    print("  /                 \      ")
-    print("//                   \/\  ")
-    print("\|   XXXX     XXXX   | /   ")
+    print("   /               \        ")
+    print("  /                 \       ")
+    print("//                   \/\    ")
+    print("\|   XXXX     XXXX   | /    ")
     print(" |   XXXX     XXXX   |/     ")
     print(" |   XXX       XXX   |      ")
     print(" |                   |      ")
-    print(" \__      XXX      __/     ")
-    print("   |\     XXX     /|       ")
+    print(" \__      XXX      __/      ")
+    print("   |\     XXX     /|        ")
     print("   | |           | |        ")
     print("   | I I I I I I I |        ")
     print("   |  I I I I I I  |        ")
-    print("   \_             _/       ")
-    print("     \_         _/         ")
-    print("       \_______/           ")
+    print("   \_             _/        ")
+    print("     \_         _/          ")
+    print("       \_______/            ")
 
 def marca_chute_correto(chute, letras_acertadas, palavra_secreta):
     index = 0
@@ -135,9 +134,9 @@ def inicializa_letras_acertadas(palavra):
     return ["_" for letra in palavra]
 
 def imprime_mensagem_abertura():
-    print("*********************************")
-    print("***Bem vindo ao jogo da Forca!***")
-    print("*********************************")
+    print("***********************************")
+    print("*** Bem vindo ao jogo da Forca! ***")
+    print("***********************************")
 
 def carrega_palavra_secreta():
     arquivo = open("palavras.txt", "r")
@@ -152,7 +151,6 @@ def carrega_palavra_secreta():
     numero = random.randrange(0, len(palavras))
     palavra_secreta = palavras[numero].upper()
     return palavra_secreta
-
 
 if(__name__ == "__main__"):
     jogar()
