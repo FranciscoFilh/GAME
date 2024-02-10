@@ -4,4 +4,4 @@
 
 Jogo da memória com tema do Rick and Morty feito com HTML, CSS e JavaScript
 
-<link FranciscoFilh.github.io/GAME/memory_game>
+<link FranciscoFilh.github.io/GAME/memory_game/>
