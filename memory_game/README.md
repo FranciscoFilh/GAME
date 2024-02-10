@@ -3,5 +3,3 @@
 <img src="images/logo.png" alt="Image" height="250" width="500">
 
 Jogo da memória com tema do Rick and Morty feito com HTML, CSS e JavaScript
-
-<a>FranciacoFilh.github.io/GAME/memoru_game/</a>
